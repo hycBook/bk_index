@@ -4,7 +4,7 @@
     "description": "记录 Java 的学习和一些技巧的使用",
     "language": "zh-hans",
     "structure": {
-        "readme": "书籍目录.md"
+        "readme": "README.md"
     },
     "links": {
         "sidebar": {

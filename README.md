@@ -33,6 +33,26 @@
 rpm -ivh jdk-8u241-linux-x64.rpm
 ```
 
+> 配置jdk环境变量
+>
+> vi /etc/profile
+
+```
+export JAVA_HOME=/usr/java/jdk1.8.0_241-amd64
+export JRE_HOME=/usr/java/jdk1.8.0_241-amd64/jre
+export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+export CLASSPATH=.:$CLASSPATH:$JAVA_HOME/lib:$JRE_HOME/lib
+```
+
+> ps: 若原先存在openjdk，需要先卸载
+>
+> ```cmd
+> # 查看jdk列表
+> rpm -qa|grep java
+> # 卸载
+> rpm -e --nodeps java-1.8.0-openjdk-1.8.0.181-7.b13.el7.x86_64
+> ```
+
 > 安装和配置nodejs
 
 ```cmd

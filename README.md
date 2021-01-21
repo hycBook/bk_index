@@ -183,7 +183,7 @@ sudo sysctl --system
 30425
 ```
 
-> batch_shell
+> 方式一：batch_shell
 
 ```shell
 #!/bin/sh
@@ -195,3 +195,46 @@ do
     echo "killed $id" 
 done
 ```
+
+> 方式二：单行执行
+
+```shell
+#!/bin/sh
+ps -ef | grep gitbook | grep -v grep|grep 4000|  awk '{print $2}' | xargs kill -9
+```
+
+
+
+# 重装系统
+
+## u盘启动盘制作
+
+### 方式一
+
+1. 百度搜索[微软官网工具](https://www.microsoft.com/zh-cn/software-download/windows10/)
+
+   ![image-20210121171520084](res/README/image-20210121171520084.png)
+
+2. 下载后，使用管理员身份运行
+3. 按步骤操作，其中下载镜像会比较耗时(好像只能下载win10)
+4. 制作启动盘完成后，就可以开始安装系统了
+
+
+
+### 方式二
+
+1. 百度搜索[itellyou](https://msdn.itellyou.cn/)，下载系统镜像
+
+   ![image-20210121172227945](res/README/image-20210121172227945.png)
+
+2. 下载u盘启动盘制作工具[UltraISO](https://cn.ultraiso.net/xiazai.html)，安装后执行
+
+   ![image-20210121172408486](res/README/image-20210121172408486.png)
+
+   ![image-20210121172424293](res/README/image-20210121172424293.png)
+
+3. 制作启动盘完成后，就可以开始安装系统了
+
+## 主板启动热键
+
+![img](res/README/21a4462309f790525fa44160a3f343cf7bcbd53f.jpeg)

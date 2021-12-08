@@ -14,7 +14,7 @@
 
 >阿里云部署笔记(centos版本)
 
-## 购买[阿里云主机](https://www.aliyun.com/)，并开启安全组
+## 购买[阿里云主机](https://www.aliyun.com/)，开启安全组
 
 云主机实例
 
@@ -238,3 +238,24 @@ ps -ef | grep gitbook | grep -v grep|grep 4000|  awk '{print $2}' | xargs kill -
 ## 主板启动热键
 
 ![img](res/README/21a4462309f790525fa44160a3f343cf7bcbd53f.jpeg)
+
+# linux常用指令
+
+> 查看某个文件或目录占用磁盘空间的大小(需要进入到当前目录)
+
+``` sh
+du -ah --max-depth=1
+```
+
+> 远程拷贝文件(-P 是指定端口，-r 是循环复制)
+
+``` sh
+scp -P port -r root@192.168.2.1:/home/hyc/test /home/hyc/
+```
+
+> 查看全局文件系统磁盘占用
+
+``` sh
+df -h
+```
+

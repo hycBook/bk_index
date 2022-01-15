@@ -19,6 +19,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          ref: main
 
       # install nodejs env
       - name: install nodejs
@@ -39,6 +41,23 @@ jobs:
           book sm
           gitbook build
           cp SUMMARY.md _book
+
+      - name: push _book to branch gh-pages
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+          REF: github.com/${{github.repository}}
+          MYEMAIL: 1832044043@qq.com
+          MYNAME: ${{github.repository_owner}}
+        run: |
+          cd _book
+          git config --global user.email "${MYEMAIL}"
+          git config --global user.name "${MYNAME}"
+          git init
+          git remote add origin https://${REF}
+          git add . 
+          git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
+          git branch -M main
+          git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages
 
       # Runs a single command using the runners shell
       - name: Run a one-line script

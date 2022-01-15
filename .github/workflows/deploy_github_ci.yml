@@ -48,6 +48,9 @@ jobs:
           MYEMAIL: 1832044043@qq.com
           MYNAME: ${{github.repository_owner}}
         run: |
+          echo ${TOKEN}
+          echo ${REF}
+          echo ${MYNAME}
           cd _book
           git config --global user.email "${MYEMAIL}"
           git config --global user.name "${MYNAME}"

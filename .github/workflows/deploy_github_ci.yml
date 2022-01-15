@@ -69,7 +69,7 @@ jobs:
       #     ssh-private-key: ${{ secrets.TOKEN }} 
 
       - name: Deploy #步骤4：把编译好的静态目录上传到gh-pages分支上
-        uses: JamesIves/github-pages-deploy-action@3.5.9 #这里调用第三方依赖，用于上传代码到指定分支上
+        uses: JamesIves/github-pages-deploy-action@3.1.5 #这里调用第三方依赖，用于上传代码到指定分支上
         with:
           ACCESS_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: gh-pages #github pages 默认的分支

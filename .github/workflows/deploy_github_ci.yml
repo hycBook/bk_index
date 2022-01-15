@@ -24,7 +24,7 @@ jobs:
       - name: install nodejs
         uses: actions/setup-node@v1
         with: 
-          node-version: '12.x'
+          node-version: '12.16.1'
       
       # configue gitbook
       - name: configue gitbook

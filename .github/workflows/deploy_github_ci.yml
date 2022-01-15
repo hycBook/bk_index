@@ -22,7 +22,8 @@ jobs:
 
       - name: install nodejs
         uses: actions/setup-node@v1
-        with: node-version: '12.x'
+        with: 
+          node-version: '12.x'
 
       # Runs a single command using the runners shell
       - name: Run a one-line script

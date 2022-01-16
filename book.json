@@ -1,7 +1,7 @@
 {
-    "title": "Java相关学习记录",
+    "title": "Python相关学习记录",
     "author": "narutohyc",
-    "description": "记录 Java 的学习和一些技巧的使用",
+    "description": "记录 Python 的学习和一些技巧的使用",
     "language": "zh-hans",
     "structure": {
         "readme": "README.md"
@@ -21,22 +21,27 @@
         "donate",
         "sharing-plus",
         "anchor-navigation-ex",
-		"mermaid-gb3",
-		"tbfed-pagefooter"
+        "favicon",
+        "mathjax",
+        "mermaid-gb3",
+        "tbfed-pagefooter"
     ],
     "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
         "github": {
             "url": "https://github.com/narutohyc"
         },
-		"tbfed-pagefooter": {
-            "copyright": "Copyright © narutohyc.com 2020",
+        "tbfed-pagefooter": {
+            "copyright": "Copyright © narutohyc.com 2021",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "github-buttons": {
             "buttons": [{
                 "user": "narutohyc",
-                "repo": "bk_jdk",
+                "repo": "bk_python",
                 "type": "star",
                 "size": "small",
                 "count": true
@@ -44,12 +49,12 @@
             ]
         },
         "donate": {
-            "wechat": "https://upload-images.jianshu.io/upload_images/15675864-5e5ba668035853d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-            "alipay": "https://upload-images.jianshu.io/upload_images/15675864-5e5ba668035853d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+            "wechat": "https://i.loli.net/2021/01/12/gmzASfCciIFXTyr.png",
+            "alipay": "https://i.loli.net/2021/01/12/Cdunm9AoBcHF5MI.png",
             "title": "",
-            "button": "赏",
-            "alipayText": "支付宝打赏",
-            "wechatText": "微信打赏"
+            "button": "欢迎打赏",
+            "alipayText": "alipay打赏",
+            "wechatText": "wechat打赏"
         },
         "sharing": {
             "douban": false,
@@ -76,6 +81,15 @@
         },
         "anchor-navigation-ex": {
             "showLevel": false
+        },
+        "favicon":{
+            "shortcut": "https://upload-images.jianshu.io/upload_images/15675864-5e5ba668035853d8.png",
+            "bookmark": "https://upload-images.jianshu.io/upload_images/15675864-5e5ba668035853d8.png",
+            "appleTouch": "https://upload-images.jianshu.io/upload_images/15675864-5e5ba668035853d8.png",
+            "appleTouchMore": {
+                "120x120": "https://upload-images.jianshu.io/upload_images/15675864-5e5ba668035853d8.png",
+                "180x180": "https://upload-images.jianshu.io/upload_images/15675864-5e5ba668035853d8.png"
+            }
         }
     }
 }

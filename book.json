@@ -13,7 +13,6 @@
     },
     "plugins": [
         "-sharing",
-        "mathjax",
         "splitter",
         "expandable-chapters-small",
         "anchors",
@@ -23,7 +22,8 @@
         "sharing-plus",
         "anchor-navigation-ex",
 		"mermaid-gb3",
-		"tbfed-pagefooter"
+		"tbfed-pagefooter",
+        "mathjax"
     ],
     "pluginsConfig": {
         "github": {

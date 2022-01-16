@@ -53,9 +53,9 @@ jobs:
           # book sm
           gitbook build
           echo 开始生成pdf电子书...
-          gitbook pdf ./ ./bk_index.pdf
+          gitbook pdf ./ bk_index.pdf
           echo 生成pdf电子书完成
-          cp ./bk_index.pdf _book/
+          cp bk_index.pdf _book/
           echo pdf电子书复制完成
           # cp SUMMARY.md _book
 

@@ -32,6 +32,7 @@ jobs:
           npm install -g gitbook-cli
           echo 开始显示
           git clone https://github.com/narutohyc/node_modules_mathjax.git
+          cp ./node_modules_mathjax/node_modules .
           pwd
           ls
           ls ..

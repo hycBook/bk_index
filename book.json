@@ -13,10 +13,10 @@
     },
     "plugins": [
         "-sharing",
+        "github",
         "splitter",
         "expandable-chapters-small",
         "anchors",
-        "github",
         "github-buttons",
         "donate",
         "sharing-plus",
@@ -41,7 +41,7 @@
         "github-buttons": {
             "buttons": [{
                 "user": "narutohyc",
-                "repo": "bk_python",
+                "repo": "bk_index",
                 "type": "star",
                 "size": "small",
                 "count": true

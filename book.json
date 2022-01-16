@@ -13,7 +13,7 @@
     },
     "plugins": [
         "-sharing",
-        "mathjax-pro",
+        "mathjax",
         "splitter",
         "expandable-chapters-small",
         "anchors",

@@ -22,8 +22,7 @@
         "sharing-plus",
         "anchor-navigation-ex",
 		"mermaid-gb3",
-		"tbfed-pagefooter",
-        "mathjax"
+		"tbfed-pagefooter"
     ],
     "pluginsConfig": {
         "github": {

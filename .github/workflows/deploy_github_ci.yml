@@ -33,6 +33,7 @@ jobs:
           echo 开始显示
           pwd
           ls
+          ls ..
           gitbook install
           npm install -g gitbook-summary
       

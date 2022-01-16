@@ -36,6 +36,8 @@ jobs:
       # generate _book folder
       - name: generate_book_folder
         run: |
+          pwd
+          ls
           book sm
           gitbook build
           cp SUMMARY.md _book

@@ -1,5 +1,7 @@
 # 电子书目录
 
+> [我自己~](https://narutohyc.github.io/bk_index/)
+
 | gitbook版本                                           | github版本                                                   | 阿里云版本                                       |
 | ----------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------ |
 | [python学习笔记](https://narutohyc.gitbook.io/python) | [python学习笔记](https://narutohyc.github.io/bk_python)      | [python学习笔记](http://112.126.102.142:4000/)   |

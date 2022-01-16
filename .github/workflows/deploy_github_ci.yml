@@ -39,6 +39,7 @@ jobs:
           book sm
           gitbook build
           cp SUMMARY.md _book
+          npm install mathjax@2.7.6
 
 
       # - name: push _book to branch gh-pages

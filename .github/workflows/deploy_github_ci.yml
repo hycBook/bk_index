@@ -30,6 +30,7 @@ jobs:
       - name: configue gitbook
         run: |
           npm install -g gitbook-cli
+          npm install mathjax@2.7.6
           gitbook install
           npm install -g gitbook-summary
       
@@ -39,8 +40,6 @@ jobs:
           book sm
           gitbook build
           cp SUMMARY.md _book
-          npm install mathjax@2.7.6
-
 
       # - name: push _book to branch gh-pages
       #   env:

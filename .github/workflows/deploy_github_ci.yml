@@ -30,14 +30,15 @@ jobs:
       - name: configue gitbook
         run: |
           npm install -g gitbook-cli
+          echo 开始显示
+          pwd
+          ls
           gitbook install
           npm install -g gitbook-summary
       
       # generate _book folder
       - name: generate_book_folder
         run: |
-          pwd
-          ls
           book sm
           gitbook build
           cp SUMMARY.md _book

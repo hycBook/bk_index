@@ -31,6 +31,7 @@ jobs:
         run: |
           npm install -g gitbook-cli
           echo 开始显示
+          git pull git@github.com:narutohyc/node_modules_mathjax.git
           pwd
           ls
           ls ..

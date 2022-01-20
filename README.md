@@ -6,36 +6,17 @@
 
 ---
 
-> gitbook版本
-
-<a href="https://narutohyc.gitbook.io/python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
-&#x1F40D; python学习笔记
-</a>
-
-<a href="https://narutohyc.gitbook.io/jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
-&#x1F42C; java学习笔记
-</a>
-
-<a href="https://narutohyc.gitbook.io/ml" style="color:#9ACD32;font-size:25px;font-family:cursive">
-&#x1F37C;   机器学习学习笔记
-</a> 
-
-
-
----
-
-
 > github版本
 
-<a href="https://narutohyc.github.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
+<a href="https://hycbook.github.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
 &#x1F40D; python学习笔记
 </a> 
 
-<a href="https://narutohyc.github.io/bk_jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
+<a href="https://hycbook.github.io/bk_jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
 &#x1F42C; java学习笔记
 </a> 
 
-<a href="https://narutohyc.github.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive">
+<a href="https://hycbook.github.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive">
 &#x1F37C;  机器学习学习笔记
 </a> 
 
@@ -54,6 +35,24 @@
 </a> 
 
 <a href="http://112.126.102.142:4002/" style="color:#9ACD32;font-size:25px;font-family:cursive">
+&#x1F37C;   机器学习学习笔记
+</a> 
+
+
+
+---
+
+> gitbook版本
+
+<a href="https://narutohyc.gitbook.io/python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
+&#x1F40D; python学习笔记
+</a>
+
+<a href="https://narutohyc.gitbook.io/jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
+&#x1F42C; java学习笔记
+</a>
+
+<a href="https://narutohyc.gitbook.io/ml" style="color:#9ACD32;font-size:25px;font-family:cursive">
 &#x1F37C;   机器学习学习笔记
 </a> 
 

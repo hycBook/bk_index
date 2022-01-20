@@ -8,68 +8,53 @@
 
 > gitbook版本
 
-
-
-<a href="https://narutohyc.gitbook.io/python">
-<font face="Arial" size=5 color=#8A2BE2> &#x1F40D; python学习笔记 </font>
+<a href="https://narutohyc.gitbook.io/python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
+&#x1F40D; python学习笔记
 </a>
 
-<a href="https://narutohyc.gitbook.io/jdk">
-<font face="Arial" size=5 color=\#87CEFA> 
+<a href="https://narutohyc.gitbook.io/jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
 &#x1F42C; java学习笔记
-</font>
 </a>
 
-<a href="https://narutohyc.gitbook.io/ml">
-<font face="Arial" size=5 color=\#9ACD32> 
-&#x1F37C;  机器学习学习笔记
-</font>
+<a href="https://narutohyc.gitbook.io/ml" style="color:#9ACD32;font-size:25px;font-family:cursive">
+&#x1F37C;   机器学习学习笔记
 </a> 
+
+
 
 ---
 
 
 > github版本
 
-<a href="https://narutohyc.github.io/bk_python">
-<font face="Arial" size=5 color=#8A2BE2> 
+<a href="https://narutohyc.github.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
 &#x1F40D; python学习笔记
-</font>
 </a> 
 
-<a href="https://narutohyc.github.io/bk_jdk">
-<font face="Arial" size=5 color=\#87CEFA>
-&#x1F42C; java学习笔记
-</font>
+<a href="https://narutohyc.github.io/bk_jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
+&#x1F42C; java学习笔记
 </a> 
 
-<a href="https://narutohyc.github.io/bk_machineLearning">
-<font face="Arial" size=5 color=\#9ACD32> 
-&#x1F37C;  机器学习学习笔记
-</font>
+<a href="https://narutohyc.github.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive">
+&#x1F37C;  机器学习学习笔记
 </a> 
+
+
 
 ---
 
 > 阿里云版本
 
-<a href="http://112.126.102.142:4000/">
-<font face="Arial" size=5 color=#8A2BE2> 
+<a href="http://112.126.102.142:4000/" style="color:#8A2BE2;font-size:25px;font-family:cursive">
 &#x1F40D; python学习笔记
-</font>
 </a> 
 
-<a href="http://112.126.102.142:4001/">
-<font face="Arial" size=5 color=\#87CEFA> 
+<a href="http://112.126.102.142:4001/" style="color:#87CEFA;font-size:25px;font-family:cursive">
 &#x1F42C; java学习笔记
-</font>
 </a> 
 
-<a href="http://112.126.102.142:4002/">
-<font face="Arial" size=5 color=\#9ACD32> 
-&#x1F37C;  机器学习学习笔记
-</font>
+<a href="http://112.126.102.142:4002/" style="color:#9ACD32;font-size:25px;font-family:cursive">
+&#x1F37C;   机器学习学习笔记
 </a> 
 
 ---
-

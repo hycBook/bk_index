@@ -8,11 +8,11 @@
 
 > gitbook版本
 
+
+
 <a href="https://narutohyc.gitbook.io/python">
-<font face="Arial" size=5 color=#8A2BE2>
-&#x1F40D; python学习笔记
-</font>
-</a> 
+<font face="Arial" size=5 color=#8A2BE2> &#x1F40D; python学习笔记 </font>
+</a>
 
 <a href="https://narutohyc.gitbook.io/jdk">
 <font face="Arial" size=5 color=\#87CEFA> 

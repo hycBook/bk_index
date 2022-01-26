@@ -13,18 +13,23 @@
     },
     "plugins": [
         "-sharing",
-        "github",
         "splitter",
         "expandable-chapters-small",
         "anchors",
+        "github",
         "github-buttons",
         "donate",
         "sharing-plus",
         "anchor-navigation-ex",
-        "favicon",
         "mathjax",
         "mermaid-gb3",
-        "tbfed-pagefooter"
+        "tbfed-pagefooter",
+        "code",
+        "favicon",
+        "search-plus", "-lunr", "-search",
+        "lightbox",
+        "change_girls",
+        "theme-comscore"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -57,22 +62,22 @@
             "wechatText": "wechat打赏"
         },
         "sharing": {
-            "douban": false,
-            "facebook": false,
-            "google": false,
+            "douban": true,
+            "facebook": true,
+            "google": true,
             "hatenaBookmark": false,
             "instapaper": false,
             "line": false,
             "linkedin": false,
             "messenger": false,
             "pocket": false,
-            "qq": false,
-            "qzone": false,
+            "qq": true,
+            "qzone": true,
             "stumbleupon": false,
-            "twitter": false,
+            "twitter": true,
             "viber": false,
             "vk": false,
-            "weibo": false,
+            "weibo": true,
             "whatsapp": false,
             "all": [
                 "google", "facebook", "weibo", "twitter",
@@ -90,6 +95,13 @@
                 "120x120": "https://upload-images.jianshu.io/upload_images/15675864-5e5ba668035853d8.png",
                 "180x180": "https://upload-images.jianshu.io/upload_images/15675864-5e5ba668035853d8.png"
             }
+        },
+        "change_girls" : {
+            "time" : 10,
+            "urls" : [
+                "https://plc.jj20.com/up/allimg/1115/012122143136/220121143136-2.jpg", 
+                "https://plc.jj20.com/up/allimg/1115/111R1094405/21111P94405-1.jpg"
+            ]
         }
     }
 }

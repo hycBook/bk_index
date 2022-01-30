@@ -30,7 +30,8 @@
         "lightbox",
         "change_girls",
         "theme-comscore",
-        "valine"
+        "valine",
+        "pageview-count"
     ],
     "pluginsConfig": {
         "theme-default": {

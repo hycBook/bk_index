@@ -31,7 +31,7 @@
         "change_girls",
         "theme-comscore",
         "valine",
-        "pageview-count"
+        "baidu-tongji"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -108,6 +108,9 @@
         "valine": {
             "appId": "WuiP4MKU6JCmvPTVCh4GEcyb-gzGzoHsz",
             "appKey": "L0zH7w5x6Jdis3VEQRK1FDPC"
+        },
+        "baidu-tongji": {
+            "token": "b9012173c523abaf7e06231113ec1573"
         }
     }
 }

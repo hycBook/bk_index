@@ -29,7 +29,8 @@
         "search-plus", "-lunr", "-search",
         "lightbox",
         "change_girls",
-        "theme-comscore"
+        "theme-comscore",
+        "valine"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -102,6 +103,10 @@
                 "https://plc.jj20.com/up/allimg/1115/012122143136/220121143136-2.jpg", 
                 "https://plc.jj20.com/up/allimg/1115/111R1094405/21111P94405-1.jpg"
             ]
+        },
+        "valine": {
+            "appId": "WuiP4MKU6JCmvPTVCh4GEcyb-gzGzoHsz",
+            "appKey": "L0zH7w5x6Jdis3VEQRK1FDPC"
         }
     }
 }

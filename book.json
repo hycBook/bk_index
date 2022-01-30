@@ -31,7 +31,7 @@
         "change_girls",
         "theme-comscore",
         "valine",
-        "baidu"
+        "baiduana"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -109,7 +109,7 @@
             "appId": "WuiP4MKU6JCmvPTVCh4GEcyb-gzGzoHsz",
             "appKey": "L0zH7w5x6Jdis3VEQRK1FDPC"
         },
-        "baidu": {
+        "baiduana": {
             "token": "be575f860e51aaaa5a43638c01fef740"
         }
     }

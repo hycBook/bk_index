@@ -31,7 +31,8 @@
         "change_girls",
         "theme-comscore",
         "valine",
-        "pageview-count"
+        "pageview-count",
+        "favicon-absolute"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -108,6 +109,10 @@
         "valine": {
             "appId": "WuiP4MKU6JCmvPTVCh4GEcyb-gzGzoHsz",
             "appKey": "L0zH7w5x6Jdis3VEQRK1FDPC"
+        },
+        "favicon-absolute":{
+            "favicon": "./chapters/res/other/favicon.ico",
+            "appleTouchIconPrecomposed152": "./chapters/res/other/favicon.ico"
         }
     }
 }

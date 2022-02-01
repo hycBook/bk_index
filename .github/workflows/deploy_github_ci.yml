@@ -46,6 +46,8 @@ jobs:
           sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
           sudo ln -s /usr/bin/nodejs /usr/bin/node
           echo 安装calibre完成
+          mkdir -p /usr/share/fonts/truetype
+          cp -r ./node_modules_mathjax/fonts/* /usr/share/fonts/truetype
       
 
       # generate _book folder

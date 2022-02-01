@@ -32,7 +32,8 @@
         "theme-comscore",
         "valine",
         "pageview-count",
-        "favicon-absolute"
+        "favicon-absolute",
+        "yahei"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -59,7 +60,7 @@
         "donate": {
             "wechat": "https://i.loli.net/2021/01/12/gmzASfCciIFXTyr.png",
             "alipay": "https://i.loli.net/2021/01/12/Cdunm9AoBcHF5MI.png",
-            "title": "",
+            "title": "书籍笔记目录~",
             "button": "欢迎打赏",
             "alipayText": "alipay打赏",
             "wechatText": "wechat打赏"
@@ -113,6 +114,10 @@
         "favicon-absolute":{
             "favicon": "./chapters/res/other/favicon.ico",
             "appleTouchIconPrecomposed152": "./chapters/res/other/favicon.ico"
+        },
+        "fontSettings": {
+            "family": "msyh",
+            "size": 2
         }
     }
 }

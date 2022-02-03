@@ -72,7 +72,7 @@ jobs:
       - name: python pdf ebook
         run: |
           echo python 版本
-          git clone git@github.com:fuergaosi233/gitbook2pdf.git
+          git clone git@github.com:hycBook/gitbook2pdf.git
           cd gitbook2pdf
           pip install -r requirements.txt
           python gitbook.py https://hycbook.github.io/bk_index/

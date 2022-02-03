@@ -69,15 +69,15 @@ jobs:
           BRANCH: gh-pages #github pages 默认的分支
           FOLDER: _book #上传文件的目录，我这个目录在根目录下，如果是子目录可以这么写  docs/.vuepress/dist
 
-      - name: python pdf ebook
-        run: |
-          echo python 版本
-          git clone https://github.com/hycBook/gitbook2pdf.git
-          cd gitbook2pdf
-          pip install -r requirements.txt
-          python gitbook.py https://hycbook.github.io/bk_index/
-          mkdir pdf_ebook
-          ls
+      # - name: python pdf ebook
+      #   run: |
+      #     echo python 版本
+      #     git clone https://github.com/hycBook/gitbook2pdf.git
+      #     cd gitbook2pdf
+      #     pip install -r requirements.txt
+      #     python gitbook.py https://hycbook.github.io/bk_index/
+      #     mkdir pdf_ebook
+      #     ls
 
       # Runs a single command using the runners shell
       - name: Run a one-line script

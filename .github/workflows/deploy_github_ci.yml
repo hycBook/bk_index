@@ -49,6 +49,10 @@ jobs:
           mkdir -p /usr/share/fonts/truetype
           cp -r ./node_modules_mathjax/fonts/* /usr/share/fonts/truetype
       
+      - name: python pdf ebook
+        run: |
+          echo python 版本
+          python --version
 
       # generate _book folder
       - name: generate_book_folder

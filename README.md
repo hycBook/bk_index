@@ -35,7 +35,7 @@
 </a> 
 
 <a href="http://112.126.102.142:4002/" style="color:#9ACD32;font-size:25px;font-family:cursive">
-&#x1F37C;   机器学习学习笔记
+&#x1F37C;  机器学习学习笔记
 </a> 
 
 

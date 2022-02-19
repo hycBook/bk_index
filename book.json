@@ -31,7 +31,7 @@
         "change_girls",
         "theme-comscore",
         "valine",
-        "pageview-count",
+        "mf-pageview",
         "favicon-absolute",
         "yahei"
     ],
@@ -118,6 +118,10 @@
         "fontSettings": {
             "family": "msyh",
             "size": 2
+        },
+        "mf-pageview": {
+        	"app_url": "https://c883qgi5g6h85ddaaa30.baseapi.memfiredb.com",
+        	"app_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImV4cCI6MzE4MzE1MTQ1MiwiaWF0IjoxNjQ1MjMxNDUyLCJpc3MiOiJzdXBhYmFzZSJ9.PmWc1r9xbps0OsMlMFVv-18WSRCJjOvZwkNDIz0JWVI"
         }
     }
 }

@@ -70,8 +70,7 @@ jobs:
           cp ./node_modules_mathjax/styles/style.css _book/gitbook/style.css
           echo style.css文件替换完成
           # 更新计数器脚本
-          mv ./chapters/res/patch/gitbook-plugin-pageview-count/plugin.js  /home/runner/work/bk_index/bk_index/_book/gitbook/gitbook-plugin-pageview-count/plugin.js
-          chmod -R 777 /home/runner/work/bk_index/bk_index/_book/gitbook/gitbook-plugin-pageview-count/plugin.js
+          cp ./chapters/res/patch/gitbook-plugin-pageview-count/plugin.js  _book/gitbook/gitbook-plugin-pageview-count
           echo 更新计数器脚本完成
 
       - name: Deploy #步骤4：把编译好的静态目录上传到gh-pages分支上

@@ -69,6 +69,9 @@ jobs:
           echo 删除多余格式文件完成
           cp ./node_modules_mathjax/styles/style.css _book/gitbook/style.css
           echo style.css文件替换完成
+          # 更新计数器脚本
+          cp ./chapters/res/patch/gitbook-plugin-pageview-count/plugin.js ./_book/gitbook/gitbook-plugin-pageview-count
+          echo 更新计数器脚本完成
 
       - name: Deploy #步骤4：把编译好的静态目录上传到gh-pages分支上
         uses: JamesIves/github-pages-deploy-action@3.1.5 #这里调用第三方依赖，用于上传代码到指定分支上

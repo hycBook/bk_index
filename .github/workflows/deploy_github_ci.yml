@@ -70,6 +70,7 @@ jobs:
           cp ./node_modules_mathjax/styles/style.css _book/gitbook/style.css
           echo style.css文件替换完成
           # 更新计数器脚本
+          pwd
           cp ./chapters/res/patch/gitbook-plugin-pageview-count/plugin.js ./_book/gitbook/gitbook-plugin-pageview-count
           chmod -R 777 ./_book/gitbook/gitbook-plugin-pageview-count/plugin.js
           echo 更新计数器脚本完成

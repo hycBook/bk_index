@@ -71,8 +71,8 @@ jobs:
           echo style.css文件替换完成
           # 更新计数器脚本
           pwd
-          cp ./chapters/res/patch/gitbook-plugin-pageview-count/plugin.js ./_book/gitbook/gitbook-plugin-pageview-count
-          chmod -R 777 ./_book/gitbook/gitbook-plugin-pageview-count/plugin.js
+          cat ./chapters/res/patch/gitbook-plugin-pageview-count/plugin.js > ./_book/gitbook/gitbook-plugin-pageview-count/plugin.js
+          # chmod -R 777 ./_book/gitbook/gitbook-plugin-pageview-count/plugin.js
           echo 更新计数器脚本完成
 
       - name: Deploy #步骤4：把编译好的静态目录上传到gh-pages分支上

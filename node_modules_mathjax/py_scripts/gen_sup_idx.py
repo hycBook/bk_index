@@ -73,12 +73,18 @@ def check_title_func(titles: List[str], check_title: str):
 def parse_ht(html_path: str):
     # 构建html文件的soup对象
     soup = BeautifulSoup(open(html_path, 'r', encoding='utf-8)'), 'lxml')  # html.parser是解析器，也可是lxml
+    # 添加2D模型
+    script_tag, div_tag = gen_model_tag(soup=soup)
+    book_body_tag = soup.find('div', attrs={"class": "book-body"})
+    book_body_tag.append(script_tag)
+    book_body_tag.append(div_tag)
+
     # 对于无标题的文件, 直接返回不做处理
     if not soup.find('div', id="anchor-navigation-ex-navbar"):
         # 更新原始的html文件
         with open(html_path, "w", encoding='utf-8') as file:
             html_str = str(soup)
-            find_idx = html_str.find('<body>')+len('<body>')
+            find_idx = html_str.find('<body>') + len('<body>')
             html_str = f"{html_str[:find_idx]}{gen_snow_div()}{html_str[find_idx:]}"
             file.write(html_str)
         return
@@ -117,9 +123,19 @@ def parse_ht(html_path: str):
     # 更新原始的html文件
     with open(html_path, "w", encoding='utf-8') as file:
         html_str = str(soup)
-        find_idx = html_str.find('<body>')+len('<body>')
+        find_idx = html_str.find('<body>') + len('<body>')
         html_str = f"{html_str[:find_idx]}{gen_snow_div()}{html_str[find_idx:]}"
         file.write(html_str)
+
+
+def gen_model_tag(soup):
+    """ 产生2d模型代码模块 """
+    script_tag = soup.new_tag('script', src='https://cdn.jsdelivr.net/gh/zztongtong/CDN/js/live2d.min.js')
+    div_tag = soup.new_tag('div', style="position:absolute; bottom:0; left:0; width:200;")
+    canvas_tag = soup.new_tag('canvas', style="position:absolute; bottom:0; left:0; width:200;")
+    canvas_tag.attrs = {"id": "model_1", "width": "200", "height": "350"}
+    div_tag.append(canvas_tag)
+    return script_tag, div_tag
 
 
 def gen_snow_div() -> str:

@@ -28,12 +28,10 @@
         "favicon",
         "search-plus", "-lunr", "-search",
         "lightbox",
-        "change_girls",
         "theme-comscore",
         "valine",
-        "mf-pageview",
-        "favicon-absolute",
-        "yahei"
+        "pageview-count",
+        "favicon-absolute"
     ],
     "pluginsConfig": {
         "theme-default": {

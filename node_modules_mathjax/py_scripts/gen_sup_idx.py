@@ -79,6 +79,11 @@ def parse_ht(html_path: str):
     book_body_tag.append(script_tag)
     book_body_tag.append(div_tag)
 
+    # 添加鼠标点击特效
+    click_canvas_tag, click_script_tag = gen_click_tag(soup=soup)
+    book_body_tag.append(click_canvas_tag)
+    book_body_tag.append(click_script_tag)
+
     # 对于无标题的文件, 直接返回不做处理
     if not soup.find('div', id="anchor-navigation-ex-navbar"):
         # 更新原始的html文件
@@ -129,13 +134,21 @@ def parse_ht(html_path: str):
 
 
 def gen_model_tag(soup):
-    """ 产生2d模型代码模块 """
+    """ 生成 2d模型代码模块 """
     script_tag = soup.new_tag('script', src='https://cdn.jsdelivr.net/gh/zztongtong/CDN/js/live2d.min.js')
     div_tag = soup.new_tag('div', style="position:absolute; bottom:0; left:0; width:200;")
     canvas_tag = soup.new_tag('canvas', style="position:absolute; bottom:0; left:0; width:200;")
     canvas_tag.attrs = {"id": "model_1", "width": "200", "height": "350"}
     div_tag.append(canvas_tag)
     return script_tag, div_tag
+
+
+def gen_click_tag(soup):
+    """ 生成 鼠标点击特效 """
+    click_canvas_tag = soup.new_tag('canvas')
+    click_canvas_tag.attrs = {"class": "fireworks"}
+    click_script_tag = soup.new_tag('script', src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js")
+    return click_canvas_tag, click_script_tag
 
 
 def gen_snow_div() -> str:
@@ -214,7 +227,7 @@ def gen_snow_div() -> str:
               <div class="glare"></div>
               <div class="ice_shadow"></div>
             </div>
-        
+
           </div>
     '''
     return snow

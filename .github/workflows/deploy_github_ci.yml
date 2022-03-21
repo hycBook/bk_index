@@ -75,6 +75,8 @@ jobs:
           echo 更新计数器脚本完成
           echo 'loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null);' >> _book/gitbook/gitbook.js
           echo 添加模型js脚本到gitbook.js完成
+          cat chapters/res/patch/gitbook/gitbook.js >> _book/gitbook/gitbook.js
+          echo 添加鼠标点击js脚本完成
 
       - name: Deploy #步骤4：把编译好的静态目录上传到gh-pages分支上
         uses: JamesIves/github-pages-deploy-action@3.1.5 #这里调用第三方依赖，用于上传代码到指定分支上

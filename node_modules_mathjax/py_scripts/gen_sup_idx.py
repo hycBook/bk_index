@@ -81,8 +81,9 @@ def parse_ht(html_path: str):
 
     # 添加鼠标点击特效
     click_canvas_tag, click_script_tag = gen_click_tag(soup=soup)
-    book_body_tag.append(click_canvas_tag)
-    book_body_tag.append(click_script_tag)
+    book_tag = soup.find('div', attrs={"class": "book"})
+    book_tag.append(click_canvas_tag)
+    book_tag.append(click_script_tag)
 
     # 对于无标题的文件, 直接返回不做处理
     if not soup.find('div', id="anchor-navigation-ex-navbar"):

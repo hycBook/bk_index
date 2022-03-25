@@ -110,12 +110,12 @@ jobs:
           # static_list: repo_name
           # black_list: 'repo_name,repo_name2'
           # white_list: 'repo_name,repo_name2'
-        uses: wearerequired/git-mirror-action@master
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
-        with:
-          source-repo: "git@github.com:hycBook/bk_index.git"
-          destination-repo: "git@gitee.com:hycBook/bk_index.git"
+        # uses: wearerequired/git-mirror-action@master
+        # env:
+        #   SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
+        # with:
+        #   source-repo: "git@github.com:hycBook/bk_index.git"
+        #   destination-repo: "git@gitee.com:hycBook/bk_index.git"
 
       # Runs a single command using the runners shell
       - name: print_infos

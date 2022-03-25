@@ -94,7 +94,7 @@ jobs:
             _ebook/*
 
       - name: synchronize to gitee # 自动同步github到gitee，ssh-keygen生成公钥和秘钥，公钥添加到github和gitee，github生成token，配置到项目secrets.GITEE_PRIVATE_KEY里
-        uses: Yikun/gitee-mirror-action@v0.01 # 代表我们用的仓库，不用同步
+        uses: Yikun/hub-mirror-action@master # 代表我们用的仓库，不用同步
         with:
           # 必选，需要同步的Github用户（源）
           src: github/narutohyc

@@ -1,0 +1,5 @@
+.gitignore
+.bookignore
+book_default.json
+_book/chapters/*.md
+*.bat

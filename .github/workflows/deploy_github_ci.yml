@@ -64,8 +64,6 @@ jobs:
           python -u gen_sup_idx.py
           echo 生成辅助索引完成
           rm -rf _book/docs/*
-          rm -rf _book/chapters/*.md
-          rm -rf _book/*.pdf
           echo 删除多余格式文件完成
           cp ./node_modules_mathjax/styles/style.css _book/gitbook/style.css
           echo style.css文件替换完成

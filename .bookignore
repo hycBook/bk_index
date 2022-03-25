@@ -3,3 +3,4 @@
 book_default.json
 _book/chapters/*.md
 *.bat
+*.pdf

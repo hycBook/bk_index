@@ -153,7 +153,7 @@ def gen_click_tag(soup):
 
 
 def gen_snow_div() -> str:
-    snow = '''
+    """
           <div class="c1">
             <div class="cloud"></div>
           </div>
@@ -163,6 +163,8 @@ def gen_snow_div() -> str:
           <div class="c3">
             <div class="cloud"></div>
           </div>
+    """
+    snow = '''
           <div class="mountain_a"></div>
           <div class="mountain_b"></div>
           <div class="house right">

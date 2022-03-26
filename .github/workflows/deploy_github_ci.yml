@@ -83,13 +83,6 @@ jobs:
           BRANCH: gh-pages #github pages 默认的分支
           FOLDER: _book #上传文件的目录，我这个目录在根目录下，如果是子目录可以这么写  docs/.vuepress/dist
 
-      - name: Deploy nodes models #步骤4-1：把编译好的静态目录上传到gh-pages分支上
-        uses: JamesIves/github-pages-deploy-action@3.1.5 #这里调用第三方依赖，用于上传代码到指定分支上
-        with:
-          ACCESS_TOKEN: ${{ secrets.TOKEN }}
-          BRANCH: node_modules #github pages 默认的分支
-          FOLDER: node_modules #上传文件的目录，我这个目录在根目录下，如果是子目录可以这么写  docs/.vuepress/dist
-
       - name: Create GitHub release
         uses: marvinpinto/action-automatic-releases@latest
         with:
@@ -98,7 +91,8 @@ jobs:
           title: ${{ env.ReleaseVersion }}
           prerelease: false
           files: |
-            _ebook/*
+            # _ebook/*
+            node_modules/*
       
       - name: Sync Github Repos To Gitee  # 名字随便起
         uses: Yikun/hub-mirror-action@master  # 使用Yikun/hub-mirror-action

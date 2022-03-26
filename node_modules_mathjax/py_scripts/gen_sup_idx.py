@@ -16,8 +16,6 @@ from typing import List
 
 from bs4 import BeautifulSoup
 
-js_path = r"./chapters/res/patch/gitbook"
-
 
 def parse_idx(num_list: List[int]):
     """
@@ -80,20 +78,6 @@ def parse_ht(html_path: str):
     book_body_tag = soup.find('div', attrs={"class": "book-body"})
     book_body_tag.append(script_tag)
     book_body_tag.append(div_tag)
-
-    book_summary_tag = soup.find("div", attrs={"class": 'book-summary'}).findAll("li", attrs={"class": "chapter"})
-    ids = []
-    for idx, tag in enumerate(book_summary_tag):
-        ids.append(f"chapter_id_{idx}")
-        tag.attrs['id'] = ids[-1]
-
-    with open(os.path.join(js_path, '2dmodels.txt'), 'r', encoding='utf-8') as f:
-        model = f.read().strip()
-
-    with open(os.path.join(js_path, 'gitbook.js'), 'a', encoding='utf-8') as f:
-        for id_ in ids:
-            tmp = f"""$("#{id_}").on("click",function(e){{ sleep(500).then(() => {{ {model} }} }});"""
-            f.write(f"{tmp}\n")
 
     # 添加鼠标点击特效
     click_canvas_tag, click_script_tag = gen_click_tag(soup=soup)
@@ -246,6 +230,7 @@ def gen_snow_div() -> str:
               <div class="glare"></div>
               <div class="ice_shadow"></div>
             </div>
+
           </div>
     '''
     return snow

@@ -5,6 +5,9 @@ if(e&&c.isObject(e)&&e instanceof r)return e;var o=new r;return o.parse(e,t,n),o
 
 
 (function (window, document, undefined) {
+    function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
     $("#chapter_id_0")[0].addEventListener("click", function(e){ sleep(500).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
 $("#chapter_id_1")[0].addEventListener("click", function(e){ sleep(500).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
 $("#chapter_id_2")[0].addEventListener("click", function(e){ sleep(500).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);

@@ -4444,8 +4444,8 @@ function e(t, n, r) {
 			console.log("page has changed", e),
 			o(e),
 			l || (l = !0, c.trigger("start", e.config.pluginsConfig)),
-			c.trigger("page.change")
-			loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null);
+			c.trigger("page.change"),
+			loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null)
 		}
 		function o(e) {
 			f.page = e.page,

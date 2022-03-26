@@ -80,10 +80,11 @@ def parse_ht(html_path: str):
     book_body_tag.append(div_tag)
 
     # 添加鼠标点击特效
-    click_canvas_tag, click_script_tag = gen_click_tag(soup=soup)
+    click_canvas_tag, click_script_tag,click_script_tag2 = gen_click_tag(soup=soup)
     book_tag = soup.find('div', attrs={"class": "book"})
     book_tag.append(click_canvas_tag)
     book_tag.append(click_script_tag)
+    book_tag.append(click_script_tag2)
 
     # 对于无标题的文件, 直接返回不做处理
     if not soup.find('div', id="anchor-navigation-ex-navbar"):
@@ -147,9 +148,12 @@ def gen_model_tag(soup):
 def gen_click_tag(soup):
     """ 生成 鼠标点击特效 """
     click_canvas_tag = soup.new_tag('canvas')
-    click_canvas_tag.attrs = {"class": "fireworks"}
-    click_script_tag = soup.new_tag('script', src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js")
-    return click_canvas_tag, click_script_tag
+    click_canvas_tag.attrs = {"class": "fireworks",
+                              "style":"position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"}
+    click_script_tag = soup.new_tag('script', src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js")
+    click_script_tag2 = soup.new_tag('script', src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js")
+    click_script_tag2.attrs = {"type": "text/javascript"}
+    return click_canvas_tag, click_script_tag,click_script_tag2
 
 
 def gen_snow_div() -> str:
@@ -248,3 +252,4 @@ if __name__ == '__main__':
     base_path = r'_book'
     start(base_path)
     start(os.path.join(base_path, 'chapters'))
+

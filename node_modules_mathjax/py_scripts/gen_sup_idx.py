@@ -81,7 +81,7 @@ def parse_ht(html_path: str):
 
     # 添加鼠标点击特效
     click_canvas_tag, click_script_tag,click_script_tag2 = gen_click_tag(soup=soup)
-    book_tag = soup.find('div', attrs={"class": "book"})
+    book_tag = soup.find('body')
     book_tag.append(click_canvas_tag)
     book_tag.append(click_script_tag)
     book_tag.append(click_script_tag2)

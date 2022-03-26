@@ -4442,11 +4442,13 @@ function e(t, n, r) {
 	12 : [function(e, t, n) {
 		function r(e) {
 			console.log("page has changed", e),
+				loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null),
 			o(e),
-			l || (l = !0, c.trigger("start", e.config.pluginsConfig)),
-			c.trigger("page.change"),
 			loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null),
-			console.log("page has changed 修改了模型")
+				l || (l = !0, c.trigger("start", e.config.pluginsConfig)),
+			loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null),
+				c.trigger("page.change"),
+			loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null)
 		}
 		function o(e) {
 			f.page = e.page,

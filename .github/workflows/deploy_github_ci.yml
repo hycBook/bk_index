@@ -91,7 +91,6 @@ jobs:
           title: ${{ env.ReleaseVersion }}
           prerelease: false
           files: |
-            # _ebook/*
             node_modules/*
       
       - name: Sync Github Repos To Gitee  # 名字随便起

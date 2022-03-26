@@ -151,8 +151,8 @@ def gen_click_tag(soup):
     click_canvas_tag.attrs = {"class": "fireworks",
                               "style":"position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"}
     click_script_tag = soup.new_tag('script', src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js")
-    click_script_tag2 = soup.new_tag('script', src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js")
-    click_script_tag2.attrs = {"type": "text/javascript"}
+    click_script_tag2 = soup.new_tag('script')
+    click_script_tag2.attrs = {"type": "text/javascript", "src": "//cdn.bootcss.com/animejs/2.2.0/anime.min.js"}
     return click_canvas_tag, click_script_tag,click_script_tag2
 
 

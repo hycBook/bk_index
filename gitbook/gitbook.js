@@ -4445,7 +4445,8 @@ function e(t, n, r) {
 			o(e),
 			l || (l = !0, c.trigger("start", e.config.pluginsConfig)),
 			c.trigger("page.change"),
-			loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null)
+			loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null),
+			console.log("page has changed 修改了模型", e),
 		}
 		function o(e) {
 			f.page = e.page,

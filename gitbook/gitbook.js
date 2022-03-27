@@ -4442,13 +4442,18 @@ function e(t, n, r) {
 	function sleep (time) {
 	  return new Promise((resolve) => setTimeout(resolve, time));
 	}
+	async function run(){
+	 console.time('runTime:');
+	 await sleep(3000);
+	 loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null);
+	 console.timeEnd('runTime:');
+	}
         function r(e) {
             console.log("page has changed", e),
-
             o(e),
             l || (l = !0, c.trigger("start", e.config.pluginsConfig)),
             c.trigger("page.change"),
-	    sleep(3000).then(console.log("pg完成加载2D模型"))
+	    run()
         }
         function o(e) {
             f.page = e.page,
@@ -4600,26 +4605,3 @@ function e(t, n, r) {
     }
 })(window, document);
 
-
-function sleep (time) {
-  return new Promise((resolve) => setTimeout(resolve, time));
-}
-;(function ( $, window, document, undefined ){
-	var func = function(e){ 
-		console.log("等待加载2D模型");
-		sleep(5000);
-		loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null);
-		console.log("完成加载2D模型");
-		//window.onload=function(){ 
-		//    loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null);
-		//} 
-	};
-
-	$("#chapter_id_0")[0].addEventListener("click", func, false);
-	$("#chapter_id_1")[0].addEventListener("click", func, false);
-	$("#chapter_id_2")[0].addEventListener("click", func, false);
-	$("#chapter_id_3")[0].addEventListener("click", func, false);
-	$("#chapter_id_4")[0].addEventListener("click", func, false);
-
-//函数体内具体代码
-})(jQuery, window,document);

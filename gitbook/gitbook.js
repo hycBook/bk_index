@@ -4439,13 +4439,16 @@ function e(t, n, r) {
         jquery: 1
     }],
     12 : [function(e, t, n) {
+	function sleep (time) {
+	  return new Promise((resolve) => setTimeout(resolve, time));
+	}
         function r(e) {
             console.log("page has changed", e),
 
             o(e),
             l || (l = !0, c.trigger("start", e.config.pluginsConfig)),
             c.trigger("page.change"),
-            console.log("pg完成加载2D模型")
+	    sleep(3000).then(console.log("pg完成加载2D模型"))
         }
         function o(e) {
             f.page = e.page,
@@ -4604,7 +4607,7 @@ function sleep (time) {
 ;(function ( $, window, document, undefined ){
 	var func = function(e){ 
 		console.log("等待加载2D模型");
-		await sleep(5000);
+		sleep(5000);
 		loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null);
 		console.log("完成加载2D模型");
 		//window.onload=function(){ 

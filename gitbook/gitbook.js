@@ -4444,7 +4444,7 @@ function e(t, n, r) {
 	}
 	async function run(){
 	 console.time('runTime:');
-	 await sleep(3000);
+	 // await sleep(3000);
 	 loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null);
 	 console.timeEnd('runTime:');
 	}

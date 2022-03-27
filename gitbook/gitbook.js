@@ -4466,6 +4466,7 @@ function e(t, n, r) {
             l || (l = !0, c.trigger("start", e.config.pluginsConfig)),
             c.trigger("page.change"),
             run()
+            run_valine()
         }
         function o(e) {
             f.page = e.page,

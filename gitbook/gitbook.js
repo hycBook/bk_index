@@ -4451,6 +4451,7 @@ function e(t, n, r) {
             // naruthyc: 页面刷新时，重新加载2D模型
             console.time('runTime:');
             await sleep(3000);
+            new Valine({el: "#vcomments",appId: 'WuiP4MKU6JCmvPTVCh4GEcyb-gzGzoHsz',appKey: 'L0zH7w5x6Jdis3VEQRK1FDPC',placeholder: '欢迎留下评论交流~',avatar: 'wavatar',meta: undefined,pageSize: 15,lang: 'zh-CN',recordIP: false})
             loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/ak12_3302/destroy/model.json`, null);
             console.timeEnd('runTime:');
         }

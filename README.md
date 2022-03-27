@@ -1,59 +1,92 @@
-![海贼王_宽屏](./chapters/res/other/%E6%B5%B7%E8%B4%BC%E7%8E%8B_%E5%AE%BD%E5%B1%8F.jpg)
-
-# 电子书目录
-
-> 协作笔记目录，提供三种类型的部署方式  [md表情链接~](https://apps.timwhitlock.info/emoji/tables/unicode#block-4-enclosed-characters)
+<center><a href="https://sm.ms/image/KQm7PFrVcgkEvAR" target="_blank"><img src="https://s2.loli.net/2022/03/27/KQm7PFrVcgkEvAR.jpg" ></a></center>
 
 ---
 
-> github版本
+<center><a href="https://sm.ms/image/57NDJcVfZBng6OQ" target="_blank"><img src="https://s2.loli.net/2022/03/27/57NDJcVfZBng6OQ.png" ></a></center>
 
-<a href="https://hycbook.github.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
+<table>
+  <tr>
+    <td>
+     <a href="https://hycbook.github.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
 &#x1F40D; python学习笔记
 </a> 
-
-<a href="https://hycbook.github.io/bk_jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
+    </td>
+    <td>
+      <a href="https://hycbook.github.io/bk_jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
 &#x1F42C; java学习笔记
 </a> 
-
-<a href="https://hycbook.github.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive">
-&#x1F37C;  机器学习学习笔记
+    </td>
+    <td>
+      <a href="https://hycbook.github.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F37C; 机器学习学习笔记</a> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <a href="https://hycbook.gitee.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
+&#x1F40D; python学习笔记gitee
 </a> 
+    </td>
+    <td>
+      <a href="https://hycbook.gitee.io/bk_jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
+&#x1F42C; java学习笔记gitee
+</a> 
+    </td>
+    <td>
+      <a href="https://hycbook.gitee.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F37C; 机器学习学习笔记gitee</a> 
+    </td>
+  </tr>
+</table>
 
 
 
 ---
 
-> 阿里云版本
+<center><a href="https://sm.ms/image/I2XcM1flgCJWdSY" target="_blank"><img src="https://s2.loli.net/2022/03/27/I2XcM1flgCJWdSY.png" ></a></center>
 
-<a href="http://112.126.102.142:4000/" style="color:#8A2BE2;font-size:25px;font-family:cursive">
+<table>
+  <tr>
+    <td>
+     <a href="http://112.126.102.142:4000/" style="color:#8A2BE2;font-size:25px;font-family:cursive">
 &#x1F40D; python学习笔记
 </a> 
-
-<a href="http://112.126.102.142:4001/" style="color:#87CEFA;font-size:25px;font-family:cursive">
+    </td>
+    <td>
+      <a href="http://112.126.102.142:4001/" style="color:#87CEFA;font-size:25px;font-family:cursive">
 &#x1F42C; java学习笔记
 </a> 
-
-<a href="http://112.126.102.142:4002/" style="color:#9ACD32;font-size:25px;font-family:cursive">
-&#x1F37C;  机器学习学习笔记
-</a> 
+    </td>
+    <td>
+      <a href="http://112.126.102.142:4002/" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F37C; 机器学习学习笔记</a> 
+    </td>
+  </tr>
+</table>
 
 
 
 ---
 
-> gitbook版本
+<center><a href="https://sm.ms/image/8DxOEUGsF74MVWS" target="_blank"><img src="https://s2.loli.net/2022/03/27/8DxOEUGsF74MVWS.png" ></a></center>
 
-<a href="https://narutohyc.gitbook.io/python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
+<table>
+  <tr>
+    <td>
+     <a href="https://narutohyc.gitbook.io/python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
 &#x1F40D; python学习笔记
-</a>
-
-<a href="https://narutohyc.gitbook.io/jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
-&#x1F42C; java学习笔记
-</a>
-
-<a href="https://narutohyc.gitbook.io/ml" style="color:#9ACD32;font-size:25px;font-family:cursive">
-&#x1F37C;   机器学习学习笔记
 </a> 
+    </td>
+    <td>
+      <a href="https://narutohyc.gitbook.io/jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
+&#x1F42C; java学习笔记
+</a> 
+    </td>
+    <td>
+      <a href="https://narutohyc.gitbook.io/ml" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F37C; 机器学习学习笔记</a> 
+    </td>
+  </tr>
+</table>
 
 ---
+
+
+
+<center><a href="https://up.enterdesk.com/edpic_source/49/83/e0/4983e0965bc8a0c921c2675c10718b47.png" target="_blank"><img src="https://up.enterdesk.com/edpic_source/49/83/e0/4983e0965bc8a0c921c2675c10718b47.png" ></a></center>

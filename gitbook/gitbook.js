@@ -84,10 +84,10 @@ function sleep (time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
 
-$("#chapter_id_0")[0].addEventListener("click", function(e){ sleep(500).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
-$("#chapter_id_1")[0].addEventListener("click", function(e){ sleep(500).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
-$("#chapter_id_2")[0].addEventListener("click", function(e){ sleep(500).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
-$("#chapter_id_3")[0].addEventListener("click", function(e){ sleep(500).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
-$("#chapter_id_4")[0].addEventListener("click", function(e){ sleep(500).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
+$("#chapter_id_0")[0].addEventListener("click", function(e){ sleep(2000).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
+$("#chapter_id_1")[0].addEventListener("click", function(e){ sleep(5000).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
+$("#chapter_id_2")[0].addEventListener("click", function(e){ sleep(5000).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
+$("#chapter_id_3")[0].addEventListener("click", function(e){ sleep(5000).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
+$("#chapter_id_4")[0].addEventListener("click", function(e){ sleep(5000).then(() => {  loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null); } )}, false);
 
     

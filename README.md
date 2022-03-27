@@ -1,4 +1,4 @@
-<center><a href="https://sm.ms/image/KQm7PFrVcgkEvAR" target="_blank"><img src="https://s2.loli.net/2022/03/27/KQm7PFrVcgkEvAR.jpg" ></a></center>
+<center><img src="https://s2.loli.net/2022/03/27/KQm7PFrVcgkEvAR.jpg" ></center>
 
 ---
 
@@ -89,4 +89,4 @@
 
 
 
-<center><a href="https://sm.ms/image/79xJDw2HvY5VoTh" target="_blank"><img src="https://s2.loli.net/2022/03/27/79xJDw2HvY5VoTh.png" ></a></center>
+<center><img src="https://s2.loli.net/2022/03/27/79xJDw2HvY5VoTh.png" ></center>

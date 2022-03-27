@@ -1,5 +1,6 @@
 #!/usr/bin/env Python
 # -- coding: utf-8 --
+
 """
 @version: v1.0
 @author: huangyc
@@ -7,14 +8,13 @@
 @Description: 自动化生成标题的索引
 @time: 2022/2/15 19:40
 """
+
 import os
 from collections import defaultdict
 from itertools import groupby
 from typing import List
 
 from bs4 import BeautifulSoup
-
-js_path = r"./chapters/res/patch/gitbook"
 
 
 def parse_idx(num_list: List[int]):
@@ -35,6 +35,7 @@ def parse_idx(num_list: List[int]):
     if tmp_order_list:
         # 最后一组也不要忘记
         grouped_num_list.append(tmp_order_list)
+
     # 最终的编号列表 结果
     final_res = []
     # 按一级标题分组, 构建每组里面的小编号
@@ -50,11 +51,15 @@ def parse_idx(num_list: List[int]):
                 for str_idx, value in enumerate(values, start=def_order_dict[key] + 1):
                     inner_res.append(f"{start_idx}.{str_idx}")
                 def_order_dict[key] = def_order_dict[key] + len(values)
+
             if key == 3:
                 for str_idx, value in enumerate(values, start=def_order_dict[key] + 1):
                     inner_res.append(f"{'.'.join(inner_res[-1].split('.')[:2])}.{str_idx}")
         final_res.extend(inner_res)
+
     return final_res
+
+
 def check_title_func(titles: List[str], check_title: str):
     """
     检查标题的对应关系
@@ -63,6 +68,8 @@ def check_title_func(titles: List[str], check_title: str):
     @return: 是否是右侧悬浮标题列表的子集
     """
     return any([check_title.startswith(title) for title in titles])
+
+
 def parse_ht(html_path: str):
     # 构建html文件的soup对象
     soup = BeautifulSoup(open(html_path, 'r', encoding='utf-8)'), 'lxml')  # html.parser是解析器，也可是lxml
@@ -71,22 +78,20 @@ def parse_ht(html_path: str):
     book_body_tag = soup.find('div', attrs={"class": "book-body"})
     book_body_tag.append(script_tag)
     book_body_tag.append(div_tag)
+
+    # 给summary链接添加id属性
     book_summary_tag = soup.find("div", attrs={"class": 'book-summary'}).findAll("li", attrs={"class": "chapter"})
     ids = []
     for idx, tag in enumerate(book_summary_tag):
         ids.append(f"chapter_id_{idx}")
         tag.attrs['id'] = ids[-1]
-    with open(os.path.join(js_path, '2dmodels.txt'), 'r', encoding='utf-8') as f:
-        model = f.read().strip()
-    with open(os.path.join(js_path, 'gitbook.js'), 'a', encoding='utf-8') as f:
-        for id_ in ids:
-            tmp = f"""$("#{id_}").on("click",function(e){{ sleep(500).then(() => {{ {model} }} }});"""
-            f.write(f"{tmp}\n")
+
     # 添加鼠标点击特效
     click_canvas_tag, click_script_tag = gen_click_tag(soup=soup)
     book_tag = soup.find('div', attrs={"class": "book"})
     book_tag.append(click_canvas_tag)
     book_tag.append(click_script_tag)
+
     # 对于无标题的文件, 直接返回不做处理
     if not soup.find('div', id="anchor-navigation-ex-navbar"):
         # 更新原始的html文件
@@ -96,6 +101,7 @@ def parse_ht(html_path: str):
             html_str = f"{html_str[:find_idx]}{gen_snow_div()}{html_str[find_idx:]}"
             file.write(html_str)
         return
+
     # 查找所有的右边悬浮导航栏列表对象
     suspension_titles = soup.find('div', id="anchor-navigation-ex-navbar").find_all("li")
     titles, num_list = [], []
@@ -103,18 +109,22 @@ def parse_ht(html_path: str):
         lt = len([i.name for i in node.parents if i.name == 'ul'])
         num_list.append(lt)
     order_num_lst = parse_idx(num_list)
+
     # 更新右边悬浮导航栏列表 更新为带编号的样式
     for idx, node in enumerate(suspension_titles):
         title = node.find('a').text
         titles.append(title)
         node.find('a').string = f'{order_num_lst[idx]} {node.text}'
+
     # 查找所有的正文标题
     body_titles = soup.findAll(["h1", "h2", "h3"])
     body_titles = [h for h in body_titles if 'id' in h.attrs and check_title_func(titles, h.text)]
+
     assert len(body_titles) == len(titles), "长度不匹配"
     # 更新正文标题列表 更新为带编号的样式
     for order_num, bt in zip(order_num_lst, body_titles):
         bt.string = f"{order_num} {bt.text}"
+
     # 更新[TOC]为真正的导航
     try:
         target_html = soup.find('div', id="anchor-navigation-ex-navbar").next.next
@@ -122,12 +132,15 @@ def parse_ht(html_path: str):
         toc.contents = target_html
     except:
         pass
+
     # 更新原始的html文件
     with open(html_path, "w", encoding='utf-8') as file:
         html_str = str(soup)
         find_idx = html_str.find('<body>') + len('<body>')
         html_str = f"{html_str[:find_idx]}{gen_snow_div()}{html_str[find_idx:]}"
         file.write(html_str)
+
+
 def gen_model_tag(soup):
     """ 生成 2d模型代码模块 """
     script_tag = soup.new_tag('script', src='https://cdn.jsdelivr.net/gh/zztongtong/CDN/js/live2d.min.js')
@@ -136,12 +149,16 @@ def gen_model_tag(soup):
     canvas_tag.attrs = {"id": "model_1", "width": "200", "height": "350"}
     div_tag.append(canvas_tag)
     return script_tag, div_tag
+
+
 def gen_click_tag(soup):
     """ 生成 鼠标点击特效 """
     click_canvas_tag = soup.new_tag('canvas')
     click_canvas_tag.attrs = {"class": "fireworks"}
     click_script_tag = soup.new_tag('script', src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js")
     return click_canvas_tag, click_script_tag
+
+
 def gen_snow_div() -> str:
     """
           <div class="c1">
@@ -220,15 +237,20 @@ def gen_snow_div() -> str:
               <div class="glare"></div>
               <div class="ice_shadow"></div>
             </div>
+
           </div>
     '''
     return snow
+
+
 def start(path: str):
     for file_name in os.listdir(path):
         if file_name.endswith('.html'):
             f_path = os.path.join(path, file_name)
             parse_ht(f_path)
             print(f"{f_path} 处理完成")
+
+
 if __name__ == '__main__':
     base_path = r'_book'
     start(base_path)

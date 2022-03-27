@@ -87,7 +87,9 @@ function sleep (time) {
 	var func = function(e){ 
 		console.log("等待加载2D模型");
 		window.onload=function(){ 
+			console.log("准备加载2D模型");
 		    loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/an94_2404/destroy/model.json`, null);
+			console.log("完成加载2D模型");
 		} 
 	};
 	$("#chapter_id_0")[0].addEventListener("click", func, false);

@@ -4454,7 +4454,8 @@ function e(t, n, r) {
             // naruthyc: 页面刷新时，重新加载2D模型
             await sleep(3000);
             new Valine({el: "#vcomments",appId: 'WuiP4MKU6JCmvPTVCh4GEcyb-gzGzoHsz',appKey: 'L0zH7w5x6Jdis3VEQRK1FDPC',placeholder: '欢迎留下评论交流~',avatar: 'wavatar',meta: undefined,pageSize: 15,lang: 'zh-CN',recordIP: false});
-            console.log('成功加载valine插件');}
+            console.log('成功加载valine插件');
+        }
 
         function r(e) {
             console.log("page has changed", e),
@@ -4462,6 +4463,7 @@ function e(t, n, r) {
             l || (l = !0, c.trigger("start", e.config.pluginsConfig)),
             c.trigger("page.change"),
             run()
+            run_valine()
         }
         function o(e) {
             f.page = e.page,

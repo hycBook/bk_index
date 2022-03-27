@@ -4445,10 +4445,16 @@ function e(t, n, r) {
         }
         async function run(){
             // naruthyc: 页面刷新时，重新加载2D模型
-            console.time('runTime:');
-            // await sleep(3000);
+            console.log('准备加载2d模型');
+            await sleep(2000);
             loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/ak12_3302/destroy/model.json`, null);
-         console.timeEnd('runTime:');
+            console.log('成功加载2d模型');
+        }
+        async function run_valine(){
+            // naruthyc: 页面刷新时，重新加载2D模型
+            await sleep(2000);
+            new Valine({el: "#vcomments",appId: 'WuiP4MKU6JCmvPTVCh4GEcyb-gzGzoHsz',appKey: 'L0zH7w5x6Jdis3VEQRK1FDPC',placeholder: '欢迎留下评论交流~',avatar: 'wavatar',meta: undefined,pageSize: 15,lang: 'zh-CN',recordIP: false});
+            console.log('成功加载valine插件');
         }
 
         function r(e) {

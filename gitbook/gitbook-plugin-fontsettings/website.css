@@ -289,3 +289,30 @@
   background: #252737;
   font-weight: 600;
 }
+
+
+.page-inner{
+  background: #b3676705
+}
+
+.book.color-theme-1{
+  background: url(https://w.wallhaven.cc/full/6o/wallhaven-6ozkzl.jpg);
+  background-repeat:no-repeat ;
+  background-size:100% 100%; 
+  background-attachment: fixed;
+}
+
+
+.book.color-theme-1 .book-summary {
+  color: #afa790;
+  background: #fff0;
+}
+
+
+.book.color-theme-1 .book-body .page-wrapper .page-inner section {
+  background: #fafafacc;
+}
+
+.book.color-theme-1 .book-body {
+  background: #ffffff00;
+}

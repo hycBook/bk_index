@@ -4,7 +4,7 @@
 
 <center><a href="https://sm.ms/image/57NDJcVfZBng6OQ" target="_blank"><img src="https://s2.loli.net/2022/03/27/57NDJcVfZBng6OQ.png" ></a></center>
 
-<table>
+<table style="opacity: 1">
   <tr>
     <td>
      <a href="https://hycbook.github.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
@@ -36,6 +36,7 @@
     </td>
   </tr>
 </table>
+
 
 
 

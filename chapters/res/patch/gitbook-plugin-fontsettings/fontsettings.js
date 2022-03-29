@@ -31,6 +31,9 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
   function rand_background() {
     var cl = getstyle(".book.color-theme-1");
     cl.background = arr[Math.floor((Math.random() * arr.length))];
+    cl.backgroundRepeat= "no-repeat";
+    cl.backgroundSize= "100% 100%";
+    cl.backgroundAttachment= "fixed";
   }
 
   // Init configuration at start

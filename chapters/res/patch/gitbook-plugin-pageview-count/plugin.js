@@ -3,6 +3,8 @@ var gitbook = window.gitbook;
 /*
 免費網站計數器 mfwzjsq.com - 為您的網站提供來訪人數統計服務。簡易的圖片顯示形式，純HTML程式碼有利於網頁快速加載。有123種豐富的圖形樣式可供選擇，以便搭配不同風格的網頁。
 
+https://www.cutercounter.com
+
 使用幫助
 第一步：簡單的表格填空。
 第二步：選擇計數器樣式。
@@ -46,6 +48,8 @@ id_map.set("2.reinstall_the_system.html", "huxappkq");
 id_map.set("3.Linux常用命令.html", "hexappkc");
 // https://hycbook.github.io/bk_index/chapters/4.github协作.html
 id_map.set("4.github协作.html", "huuxappax");
+// https://hycbook.github.io/bk_index/chapters/5.gitbook博客搭建.html
+id_map.set("5.gitbook博客搭建.html", "heuxaqknc");
 
 
 require(["gitbook", "jQuery"], function (gitbook, $) {

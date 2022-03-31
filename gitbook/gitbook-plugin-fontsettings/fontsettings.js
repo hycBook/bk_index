@@ -291,15 +291,14 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
   });
   
   window.onbeforeunload（function(){
-　　//判断是关闭还是刷新
-　　1、满足关闭，否则是刷新
+　　// 判断是关闭还是刷新
+　　// 1、满足关闭，否则是刷新
 　　if(event.clientX>document.body.clientWidth && event.clientY < 0 || event.altKey){
 　　　　//关闭时怎么处理
 　　}else{
-    console.log("刷新了界面")
-　　　　//刷新时怎么处理
+      //刷新时怎么处理
+    console.log("刷新了界面");
 　　}
-
-}）；
+  });
 }
 );

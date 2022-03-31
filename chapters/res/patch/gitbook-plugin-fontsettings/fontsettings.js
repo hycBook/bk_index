@@ -50,7 +50,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
   function(e, config) { setInterval(rand_background, 1000 * 60 * 3);
   });
   
-  window.onbeforeunload（function(){
+  window.onbeforeunload = function(){
 　　// 判断是关闭还是刷新
 　　// 1、满足关闭，否则是刷新
 　　if(event.clientX>document.body.clientWidth && event.clientY < 0 || event.altKey){
@@ -59,6 +59,6 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       //刷新时怎么处理
     console.log("刷新了界面");
 　　}
-  });
+  };
 }
 );

@@ -241,7 +241,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
 
 require(["gitbook", "jQuery"], function(gitbook, $) {
-
+  
   var arr = ["url(https://s2.loli.net/2022/03/28/zhJQxDkXmSIMAHe.jpg)", 
              "url(https://s2.loli.net/2022/03/28/RznmaJC4yMtvG7w.jpg)",
              "url(https://s2.loli.net/2022/03/28/bUaDCHjGAvQZSnw.jpg)",
@@ -289,16 +289,5 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
   gitbook.events.bind('start',
   function(e, config) { setInterval(rand_background, 1000 * 60 * 3);
   });
-  
-  window.onbeforeunload = function(){
-　　// 判断是关闭还是刷新
-　　// 1、满足关闭，否则是刷新
-　　if(event.clientX>document.body.clientWidth && event.clientY < 0 || event.altKey){
-　　　　//关闭时怎么处理
-　　}else{
-      //刷新时怎么处理
-    console.log("刷新了界面");
-　　}
-  };
-}
-);
+
+});

@@ -194,13 +194,232 @@
 <div class="search-plus" id="book-search-results">
 <div class="search-noresults">
 <section class="normal markdown-section">
-<div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon"></span><a href="#gitbook介绍">1 gitbook介绍</a></li></ul></div><a href="#gitbook介绍" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><a data-lightbox="b0c78fa6-90a8-4ff4-b7ee-0735a03da234" data-title="img" href="res/other/异世界蕾姆_0.png"><img alt="img" src="res/other/异世界蕾姆_0.png"/></a></p>
+<div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon"></span><a href="#gitbook">1 gitbook</a></li><ul><li><span class="title-icon"></span><a href="#环境搭建">1.1 环境搭建</a></li><li><span class="title-icon"></span><a href="#初始化电子书">1.2 初始化电子书</a></li><li><span class="title-icon"></span><a href="#重要文件">1.3 重要文件</a></li><li><span class="title-icon"></span><a href="#插件篇">1.4 插件篇</a></li><li><span class="title-icon"></span><a href="#markdown语法">1.5 markdown语法</a></li></ul><li><span class="title-icon"></span><a href="#改造">2 改造</a></li><ul><li><span class="title-icon"></span><a href="#访客数">2.1 访客数</a></li><li><span class="title-icon"></span><a href="#valine">2.2 valine</a></li><li><span class="title-icon"></span><a href="#美化">2.3 美化</a></li></ul><li><span class="title-icon"></span><a href="#部署">3 部署</a></li><ul><li><span class="title-icon"></span><a href="#gitbook官网部署">3.1 gitbook官网部署</a></li><li><span class="title-icon"></span><a href="#github-pages">3.2 github pages</a></li><li><span class="title-icon"></span><a href="#gitee-pages">3.3 gitee pages</a></li></ul></ul></div><a href="#gitbook" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><a data-lightbox="f7a24754-d856-46e5-b693-288bee6b1883" data-title="img" href="res/other/异世界蕾姆_0.png"><img alt="img" src="res/other/异世界蕾姆_0.png"/></a></p>
 <hr/>
-<p><li><span class="title-icon"></span><a href="#gitbook介绍">1 gitbook介绍</a></li></p>
+<p><li><span class="title-icon"></span><a href="#gitbook">1 gitbook</a></li><ul><li><span class="title-icon"></span><a href="#环境搭建">1.1 环境搭建</a></li><li><span class="title-icon"></span><a href="#初始化电子书">1.2 初始化电子书</a></li><li><span class="title-icon"></span><a href="#重要文件">1.3 重要文件</a></li><li><span class="title-icon"></span><a href="#插件篇">1.4 插件篇</a></li><li><span class="title-icon"></span><a href="#markdown语法">1.5 markdown语法</a></li></ul><li><span class="title-icon"></span><a href="#改造">2 改造</a></li><ul><li><span class="title-icon"></span><a href="#访客数">2.1 访客数</a></li><li><span class="title-icon"></span><a href="#valine">2.2 valine</a></li><li><span class="title-icon"></span><a href="#美化">2.3 美化</a></li></ul><li><span class="title-icon"></span><a href="#部署">3 部署</a></li><ul><li><span class="title-icon"></span><a href="#gitbook官网部署">3.1 gitbook官网部署</a></li><li><span class="title-icon"></span><a href="#github-pages">3.2 github pages</a></li><li><span class="title-icon"></span><a href="#gitee-pages">3.3 gitee pages</a></li></ul></p>
 <hr/>
-<h1 id="gitbook介绍">1 gitbook介绍</h1>
+<h1 id="gitbook">1 gitbook</h1>
+<blockquote>
+<p><a href="https://zhuanlan.zhihu.com/p/34946169" target="_blank">使用 Gitbook 打造你的电子书</a></p>
+<p><a href="https://www.gitbook.com" target="_blank">gitbook官网</a></p>
+</blockquote>
+<h2 id="环境搭建">1.1 环境搭建</h2>
+<blockquote>
+<p>nodejs</p>
+</blockquote>
+<p><a href="http://nodejs.cn/download/" target="_blank">官网下载</a>，这里可以选择<code>12.16.1</code>版本，太新的版本后面可能会出现奇怪的问题，这是笔者使用的版本</p>
+<blockquote>
+<p>执行以下命令安装gitbook命令</p>
+</blockquote>
+<pre><code class="lang-cmd">npm install -g gitbook-cli
+# 查看是否安装完成, 能正确显示版本号就行，这里推荐gitBook==<span class="hljs-number">3</span>.<span class="hljs-number">2</span>.<span class="hljs-number">3</span>
+gitbook -V
+</code></pre>
+<h2 id="初始化电子书">1.2 初始化电子书</h2>
+<blockquote>
+<p>初始化电子书</p>
+</blockquote>
+<pre><code class="lang-cmd">gitbook init
+</code></pre>
+<p>这时候会生成下面两个文件<code>README.md</code>和<code>SUMMARY.md</code></p>
+<p><code>README.md</code> 书籍的介绍写在这个文件里；<code>SUMMARY.md</code>书籍的目录结构在这里配置</p>
+<blockquote>
+<p>安装插件</p>
+</blockquote>
+<p>有配置book.json时，执行<code>gitbook install</code>会安装插件到node_modules目录</p>
+<blockquote>
+<p>使用以下命令启动gitbook，打开<a href="http://localhost:4000/" target="_blank">http://localhost:4000</a>就可以访问了，</p>
+</blockquote>
+<pre><code class="lang-cmd">gitbook serve
+</code></pre>
+<h2 id="重要文件">1.3 重要文件</h2>
+<blockquote>
+<p>book.json，没有的话，自己新建一个就好</p>
+<p>用于配置插件和书籍的基本信息</p>
+</blockquote>
+<pre><code class="lang-josn">{
+    "title": "书籍目录",
+    "author": "narutohyc",
+    "description": "书籍目录，记录一些工作和学习中的笔记",
+    "language": "zh-hans",
+    "structure": {
+        "readme": "README.md"
+    },
+    "links": {
+        "sidebar": {
+            "我の小窝~": "https://github.com/narutohyc"
+        }
+    },
+    "plugins": [
+        "-sharing",
+        "splitter",
+        "expandable-chapters-small",
+        "anchors",
+        "github",
+        "github-buttons",
+        "donate",
+        "sharing-plus",
+        "anchor-navigation-ex",
+        "mathjax",
+        "mermaid-gb3",
+        "tbfed-pagefooter",
+        "code",
+        "search-plus", "-lunr", "-search",
+        "lightbox",
+        "theme-comscore",
+        "valine",
+        "pageview-count",
+        "favicon-absolute",
+        "copyright-v"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "github": {
+            "url": "https://github.com/narutohyc"
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright © narutohyc.com 2021",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "narutohyc",
+                "repo": "bk_index",
+                "type": "star",
+                "size": "small",
+                "count": true
+                }
+            ]
+        },
+        "donate": {
+            "wechat": "https://s2.loli.net/2022/03/23/WDiTVSamQBJdEA4.png",
+            "alipay": "https://s2.loli.net/2022/03/23/dEYjkaSGXwe7rnu.png",
+            "title": "",
+            "button": "欢迎打赏",
+            "alipayText": "alipay打赏",
+            "wechatText": "wechat打赏"
+        },
+        "sharing": {
+            "douban": true,
+            "facebook": true,
+            "google": true,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": true,
+            "qzone": true,
+            "stumbleupon": false,
+            "twitter": true,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "google", "facebook", "weibo", "twitter",
+                "qq", "qzone", "linkedin", "pocket"
+            ]
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false
+        },
+        "valine": {
+            "appId": "leancloud申请的appId",
+            "appKey": "leancloud申请的appKey",
+            "avatar": "wavatar",
+            "placeholder": "欢迎留下评论交流~",
+            "pageSize": 15
+        },
+        "favicon-absolute":{
+            "favicon": "./chapters/res/other/favicon.ico",
+            "appleTouchIconPrecomposed152": "./chapters/res/other/favicon.ico"
+        },
+        "fontSettings": {
+            "family": "msyh",
+            "size": 2
+        },
+        "copyright-v": {
+            "site": "https://hycbook.github.io/bk_python/",
+            "author": "narutohyc",
+            "website": "python元知识驿站",
+            "image": "https://s2.loli.net/2022/03/24/pbMd1BCgUNzi7mG.png",
+            "copyProtect": true,
+        "enableFooter": false
+        }
+    }
+}
+</code></pre>
+<p><strong>重要参数说明:</strong></p>
+<ul>
+<li></li>
+</ul>
+<blockquote>
+<p>.bookignore，存放不想被打包的资源</p>
+</blockquote>
+<pre><code class="lang-cmd">.gitignore
+.bookignore
+book_default.json
+_book/chapters/*.md
+*.bat
+*.pdf
+</code></pre>
+<blockquote>
+<p>_book</p>
+</blockquote>
+<p>使用<code>gitbook build</code>命令，会在项目的目录下生成一个 <code>_book</code> 目录，里面的内容为静态站点的资源文件</p>
+<p>发布出来的就是这个目录下的资源</p>
+<p><code>gitbook build</code>只负责生成静态文件，<code>gitbook serve</code>不仅生成文件，还会启动网站服务</p>
+<p>使用选项 <code>--log=debug</code> 和 <code>--debug</code> 来获取更好的错误消息</p>
+<pre><code class="lang-cmd">gitbook build ./ --log=debug --debug
+</code></pre>
+<blockquote>
+<p>SUMMARY.md，用于存放数据目录</p>
+</blockquote>
+<pre><code class="lang-markdown"><span class="hljs-section"># Summary</span>
+
+<span class="hljs-bullet">* </span>[<span class="hljs-string">Introduction</span>](<span class="hljs-link">README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">alicloud_deployment</span>](<span class="hljs-link">./chapters/1.alicloud_deployment.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">reinstall_the_system</span>](<span class="hljs-link">./chapters/2.reinstall_the_system.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">Linux常用命令</span>](<span class="hljs-link">./chapters/3.Linux常用命令.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">github协作</span>](<span class="hljs-link">./chapters/4.github协作.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">gitbook博客搭建</span>](<span class="hljs-link">./chapters/5.gitbook博客搭建.md</span>)
+</code></pre>
+<blockquote>
+<p>node_modules</p>
+</blockquote>
+<h2 id="插件篇">1.4 插件篇</h2>
+<blockquote>
+<p>Gitbook 默认带有 5 个插件：</p>
+</blockquote>
+<ul>
+<li>highlight</li>
+<li>search</li>
+<li>sharing</li>
+<li>font-settings</li>
+<li>livereload</li>
+</ul>
+<h2 id="markdown语法">1.5 markdown语法</h2>
+<blockquote>
+<p><a href="https://docs.github.com/cn/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax" target="_blank">基本撰写和格式语法</a></p>
+</blockquote>
+<p><code>Markdown</code>是一种<strong>轻量级</strong>标记语言，创始人是<strong>约翰·格鲁伯</strong>(John Gruber)</p>
+<p>它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 HTML 文档</p>
+<p>推荐配合<a href="https://typora.io/" target="_blank">Typora编辑器</a>一起食用</p>
+<h1 id="改造">2 改造</h1>
+<h2 id="访客数">2.1 访客数</h2>
+<h2 id="valine">2.2 valine</h2>
+<h2 id="美化">2.3 美化</h2>
+<h1 id="部署">3 部署</h1>
+<h2 id="gitbook官网部署">3.1 gitbook官网部署</h2>
+<h2 id="github-pages">3.2 github pages</h2>
+<h2 id="gitee-pages">3.3 gitee pages</h2>
 <p></p><footer class="page-footer"><span class="copyright">Copyright © narutohyc.com 2021 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
-2022-03-31 08:03:57
+2022-03-31 14:03:11
 </span></footer><hr/><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'WuiP4MKU6JCmvPTVCh4GEcyb-gzGzoHsz',appKey: 'L0zH7w5x6Jdis3VEQRK1FDPC',placeholder: '欢迎留下评论交流~',avatar: 'wavatar',meta: undefined,pageSize: 15,lang: 'zh-CN',recordIP: false})</script><p></p>
 </section>
 </div>
@@ -224,7 +443,7 @@
 <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"gitbook博客搭建","level":"1.6","depth":1,"previous":{"title":"github协作","level":"1.5","depth":1,"path":"chapters/4.github协作.md","ref":"./chapters/4.github协作.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","mathjax","mermaid-gb3","tbfed-pagefooter","code","search-plus","-lunr","-search","lightbox","theme-comscore","valine","pageview-count","favicon-absolute","copyright-v"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © narutohyc.com 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/narutohyc"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"donate":{"alipay":"https://i.loli.net/2021/01/12/Cdunm9AoBcHF5MI.png","alipayText":"alipay打赏","button":"欢迎打赏","title":"","wechat":"https://i.loli.net/2021/01/12/gmzASfCciIFXTyr.png","wechatText":"wechat打赏"},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"./chapters/res/other/favicon.ico","appleTouchIconPrecomposedMore":{},"favicon":"./chapters/res/other/favicon.ico"},"copyright-v":{"copyProtect":true,"enableFooter":false,"site":"https://hycbook.github.io/bk_python/","author":"narutohyc","website":"python元知识驿站","image":"https://s2.loli.net/2022/03/24/pbMd1BCgUNzi7mG.png"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"msyh","size":2},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"pageview-count":{},"github-buttons":{"buttons":[{"user":"narutohyc","repo":"bk_index","type":"star","size":"small","count":true}]},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":true,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"valine":{"avatar":"wavatar","lang":"zh-CN","pageSize":15,"placeholder":"欢迎留下评论交流~","recordIP":false,"appId":"WuiP4MKU6JCmvPTVCh4GEcyb-gzGzoHsz","appKey":"L0zH7w5x6Jdis3VEQRK1FDPC"},"search-plus":{}},"theme":"default","author":"narutohyc","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"书籍目录","language":"zh-hans","links":{"sidebar":{"我の小窝~":"https://github.com/narutohyc"}},"gitbook":"*","description":"书籍目录，记录一些工作和学习中的笔记"},"file":{"path":"chapters/5.gitbook博客搭建.md","mtime":"2022-03-31T08:03:57.365Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-31T08:05:39.900Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"gitbook博客搭建","level":"1.6","depth":1,"previous":{"title":"github协作","level":"1.5","depth":1,"path":"chapters/4.github协作.md","ref":"./chapters/4.github协作.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","mathjax","mermaid-gb3","tbfed-pagefooter","code","search-plus","-lunr","-search","lightbox","theme-comscore","valine","pageview-count","favicon-absolute","copyright-v"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © narutohyc.com 2021","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/narutohyc"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"donate":{"alipay":"https://s2.loli.net/2022/03/23/dEYjkaSGXwe7rnu.png","alipayText":"alipay打赏","button":"欢迎打赏","title":"","wechat":"https://s2.loli.net/2022/03/23/WDiTVSamQBJdEA4.png","wechatText":"wechat打赏"},"favicon-absolute":{"appleTouchIconMore":{},"appleTouchIconPrecomposed152":"./chapters/res/other/favicon.ico","appleTouchIconPrecomposedMore":{},"favicon":"./chapters/res/other/favicon.ico"},"copyright-v":{"copyProtect":true,"enableFooter":false,"site":"https://hycbook.github.io/bk_python/","author":"narutohyc","website":"python元知识驿站","image":"https://s2.loli.net/2022/03/24/pbMd1BCgUNzi7mG.png"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"family":"msyh","size":2},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"pageview-count":{},"github-buttons":{"buttons":[{"user":"narutohyc","repo":"bk_index","type":"star","size":"small","count":true}]},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":true,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"valine":{"avatar":"wavatar","lang":"zh-CN","pageSize":15,"placeholder":"欢迎留下评论交流~","recordIP":false,"appId":"WuiP4MKU6JCmvPTVCh4GEcyb-gzGzoHsz","appKey":"L0zH7w5x6Jdis3VEQRK1FDPC"},"search-plus":{}},"theme":"default","author":"narutohyc","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"书籍目录","language":"zh-hans","links":{"sidebar":{"我の小窝~":"https://github.com/narutohyc"}},"gitbook":"*","description":"书籍目录，记录一些工作和学习中的笔记"},"file":{"path":"chapters/5.gitbook博客搭建.md","mtime":"2022-03-31T14:03:11.013Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-31T14:05:05.044Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 <canvas class="fireworks"></canvas><script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script></div>

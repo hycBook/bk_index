@@ -50,7 +50,7 @@
             "copyrightColor": "#666",
             "utcOffset": "8",
             "style": "normal",
-            "noPowered": false,
+            "noPowered": false
         },
         "github-buttons": {
             "buttons": [{

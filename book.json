@@ -40,22 +40,17 @@
         "github": {
             "url": "https://github.com/narutohyc"
         },
-        "tbfed-pagefooter": {
-            "copyright": "Copyright © narutohyc.com 2021",
-            "modify_label": "该文件修订时间：",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
         "page-copyright": {
-          "description": "modified at",
-          "signature": "你的签名",
-          "wisdom": "Designer, Frontend Developer & overall web enthusiast",
-          "format": "YYYY-MM-dd hh:mm:ss",
-          "copyright": "Copyright &#169; 你的名字",
-          "timeColor": "#666",
-          "copyrightColor": "#666",
-          "utcOffset": "8",
-          "style": "normal",
-          "noPowered": false,
+            "description": "modified at",
+            "signature": "你的签名",
+            "wisdom": "Designer, Frontend Developer & overall web enthusiast",
+            "format": "YYYY-MM-dd hh:mm:ss",
+            "copyright": "Copyright &#169; 你的名字",
+            "timeColor": "#666",
+            "copyrightColor": "#666",
+            "utcOffset": "8",
+            "style": "normal",
+            "noPowered": false,
         },
         "github-buttons": {
             "buttons": [{

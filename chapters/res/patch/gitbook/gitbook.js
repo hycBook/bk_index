@@ -5043,8 +5043,11 @@ function e(t, n, r) {
                     "Arknights311": "https://valinecdn.bili33.top/Arknights/working_15.jpg",
                     "Arknights312": "https://valinecdn.bili33.top/Arknights/working_16.jpg"
                 }
-
         });
+            var arr = ["url(https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp)", 
+                       "url(https://s2.loli.net/2022/04/03/ItmFl1A8DTPwszv.gif)",
+                       "url(https://s2.loli.net/2022/04/03/aq45FV6Db39nEev.gif)"];
+            $(veditor).backgroundImage = arr[Math.floor((Math.random() * arr.length))];
             console.log('成功加载valine插件');
         }
 

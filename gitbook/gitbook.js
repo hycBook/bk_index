@@ -5154,6 +5154,7 @@ function e(t, n, r) {
         );
         attachEvent();
         gameloop();
+        console.log("我只显示一次")
     }
 
     function gameloop() {

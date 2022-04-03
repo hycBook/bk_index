@@ -5050,6 +5050,7 @@ function e(t, n, r) {
 
         });
             console.log('成功加载valine插件');
+            $(veditor).backgroundImage="url(https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp)";
         }
 
         function r(e) {

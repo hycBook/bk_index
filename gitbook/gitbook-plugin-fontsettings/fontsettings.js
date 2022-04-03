@@ -287,7 +287,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
 
   // Init configuration at start
   gitbook.events.bind('start',
-  function(e, config) { setInterval(rand_background, 1000 * 60 * 3);
+    function(e, config) { setInterval(rand_background, 1000 * 60 * 3);
   });
-
+    rand_background();
 });

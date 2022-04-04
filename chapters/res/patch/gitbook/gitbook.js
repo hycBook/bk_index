@@ -4447,7 +4447,8 @@ function e(t, n, r) {
             // naruthyc: 页面刷新时，重新加载2D模型
             console.log('准备加载2d模型');
             await sleep(3000);
-            loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/ak12_3302/destroy/model.json`, null);
+            // loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/ak12_3302/destroy/model.json`, null);
+            loadlive2d("model_1", `https://cdn.jsdelivr.net/gh/zztongtong/moc-models@5.0/browninghp_4602/normal/model.json`, null);
             console.log('成功加载2d模型');
         }
         async function run_valine(){

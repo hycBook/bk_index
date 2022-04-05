@@ -77,6 +77,7 @@ jobs:
           echo 添加鼠标点击js脚本完成
           cat chapters/res/patch/gitbook-plugin-fontsettings/fontsettings.js >> _book/gitbook/gitbook-plugin-fontsettings/fontsettings.js
           cat chapters/res/patch/gitbook-plugin-fontsettings/website.css >> _book/gitbook/gitbook-plugin-fontsettings/website.css
+          echo chapters/res/patch/gitbook-plugin-theme-comscore/test.css > _book/gitbook/gitbook-plugin-theme-comscore/test.css
           echo 更新自定义主题完成
 
       - name: Deploy #步骤4：把编译好的静态目录上传到gh-pages分支上

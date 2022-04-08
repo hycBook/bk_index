@@ -58,7 +58,7 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
     var lastChild = bookHeader.children().last()
 
     var res  = decodeURI(location.href).split('/')
-    var get_id = id_map.get(res[res.length-1])
+    var get_id = id_map.get(res[res.length-1].split('?h')[0])
 
     var t = Date.now();
     var src= 'https://www.cutercounter.com/hits.php?id='+get_id+'&nd=1&style='+counter_style+'?t='+t;

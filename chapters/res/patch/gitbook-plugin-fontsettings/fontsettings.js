@@ -19,7 +19,17 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
              "url(https://s2.loli.net/2022/03/30/jr1WIvz3D59BxPa.jpg)",
              "url(https://s2.loli.net/2022/03/30/ZbHfIPG7rEswdFg.jpg)",
              "url(https://s2.loli.net/2022/03/30/dXGBrg4w7pFYSj5.jpg)",
-             "url(https://s2.loli.net/2022/03/30/F81RSDg4iTZH7fX.jpg)"];
+             "url(https://s2.loli.net/2022/03/30/F81RSDg4iTZH7fX.jpg)",
+             "url(https://s2.loli.net/2022/04/11/PCXsSZLxQj1WmhV.jpg)",
+             "url(https://s2.loli.net/2022/04/11/IZtiNhxJ79TUFAd.jpg)",
+             "url(https://s2.loli.net/2022/04/11/b41TsABGj3z2WON.jpg)",
+             "url(https://s2.loli.net/2022/04/11/6y3sAiISe4KPpzV.jpg)",
+             "url(https://s2.loli.net/2022/04/11/uEZByx8jn2RtraY.jpg)",
+             "url(https://s2.loli.net/2022/04/11/akWRGFBzwIAJnj2.jpg)",
+             "url(https://s2.loli.net/2022/04/11/LnatohGSwfXgIxy.jpg)",
+             "url(https://s2.loli.net/2022/04/11/IOjrbpcRA54ZNny.jpg)",
+             "url(https://s2.loli.net/2022/04/11/Sjk17uKTFJiA4bV.jpg)",
+             "url(https://s2.loli.net/2022/04/11/jXrSuVxJKeYBszH.jpg)"];
 
   function getstyle(sname) {
     for (var i = 0; i < document.styleSheets.length; i++) {

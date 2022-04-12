@@ -19,7 +19,7 @@ require([
         if (window.ActiveXObject) {
             document.body.oncopy = function() {
                 event.returnValue = false;
-                var t = document.selection.createRange().text;
+                var t = window.getSelection().toString();
                 var extraCopyrightInfo = getCopyright();
                 console.log(t);
                 clipboardData.setData('Text', t + extraCopyrightInfo);
@@ -28,7 +28,7 @@ require([
             document.oncopy = function(){
                 var body_element = document.getElementsByTagName('body')[0];
                 var selection;
-                selection = window.getSelection();
+                selection = window.getSelection().toString();
                 var extraCopyrightInfo = getCopyright();
                 console.log(selection);
                 var copytext = selection + extraCopyrightInfo;

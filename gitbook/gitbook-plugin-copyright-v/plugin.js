@@ -21,6 +21,7 @@ require([
                 event.returnValue = false;
                 var t = document.selection.createRange().text;
                 var extraCopyrightInfo = getCopyright();
+                console.log(t);
                 clipboardData.setData('Text', t + extraCopyrightInfo);
             };
         } else {
@@ -29,7 +30,9 @@ require([
                 var selection;
                 selection = window.getSelection();
                 var extraCopyrightInfo = getCopyright();
+                console.log(selection);
                 var copytext = selection + extraCopyrightInfo;
+                console.log(copytext);
                 var newdiv = document.createElement('div');
                 newdiv.style.position = 'absolute';
                 newdiv.style.left = '-99999px';

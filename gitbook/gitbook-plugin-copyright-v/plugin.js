@@ -19,20 +19,17 @@ require([
         if (window.ActiveXObject) {
             document.body.oncopy = function() {
                 event.returnValue = false;
-                var t = window.getSelection().toString();
+                var t = document.selection.createRange().text;
                 var extraCopyrightInfo = getCopyright();
-                console.log(t);
                 clipboardData.setData('Text', t + extraCopyrightInfo);
             };
         } else {
             document.oncopy = function(){
                 var body_element = document.getElementsByTagName('body')[0];
                 var selection;
-                selection = window.getSelection().toString();
+                selection = window.getSelection();
                 var extraCopyrightInfo = getCopyright();
-                console.log(selection);
                 var copytext = selection + extraCopyrightInfo;
-                console.log(copytext);
                 var newdiv = document.createElement('div');
                 newdiv.style.position = 'absolute';
                 newdiv.style.left = '-99999px';

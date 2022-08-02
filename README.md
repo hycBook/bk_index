@@ -4,6 +4,41 @@
 
 <center><a href="https://sm.ms/image/57NDJcVfZBng6OQ" target="_blank"><img src="https://s2.loli.net/2022/03/27/57NDJcVfZBng6OQ.png" ></a></center>
 
+> 基于gitbook的电子书，部署在github和gitee上
+
+* python学习笔记记录了关于python基本的使用，以及其他的一些进阶使用
+
+  * <a href="https://hycbook.github.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
+    &#x1F40D; python学习笔记
+    </a> 
+
+  * <a href="https://hycbook.gitee.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
+    &#x1F40D; python学习笔记gitee
+    </a> 
+
+    
+
+* java学习笔记记录了关于java基本的使用，以及一些框架的使用方法
+
+  * <a href="https://hycbook.github.io/bk_jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
+    &#x1F42C; java学习笔记
+    </a>
+
+  * <a href="https://hycbook.gitee.io/bk_jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
+    &#x1F42C; java学习笔记gitee
+    </a> 
+
+    
+
+* 机器学习笔记
+
+  * <a href="https://hycbook.github.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F37C; 机器学习学习笔记</a> 
+  * <a href="https://hycbook.gitee.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F37C; 机器学习学习笔记gitee</a> 
+
+
+
+---
+
 <table style="opacity: 1">
   <tr>
     <td>

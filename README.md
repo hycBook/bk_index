@@ -47,40 +47,6 @@
 
 ---
 
-<table style="opacity: 1">
-  <tr>
-    <td>
-     <a href="https://hycbook.github.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
-&#x1F40D; python学习笔记
-</a> 
-    </td>
-    <td>
-      <a href="https://hycbook.github.io/bk_jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
-&#x1F42C; java学习笔记
-</a> 
-    </td>
-    <td>
-      <a href="https://hycbook.github.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F37C; 机器学习学习笔记</a> 
-    </td>
-  </tr>
-  <tr>
-    <td>
-     <a href="https://hycbook.gitee.io/bk_python" style="color:#8A2BE2;font-size:25px;font-family:cursive">
-&#x1F40D; python学习笔记gitee
-</a> 
-    </td>
-    <td>
-      <a href="https://hycbook.gitee.io/bk_jdk" style="color:#87CEFA;font-size:25px;font-family:cursive">
-&#x1F42C; java学习笔记gitee
-</a> 
-    </td>
-    <td>
-      <a href="https://hycbook.gitee.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F37C; 机器学习学习笔记gitee</a> 
-    </td>
-  </tr>
-</table>
-
-
 
 
 ---

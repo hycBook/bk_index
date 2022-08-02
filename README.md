@@ -32,8 +32,16 @@
 
 * 机器学习笔记
 
-  * <a href="https://hycbook.github.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F37C; 机器学习学习笔记</a> 
-  * <a href="https://hycbook.gitee.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F37C; 机器学习学习笔记gitee</a> 
+  * <a href="https://hycbook.github.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F34F; 机器学习学习笔记</a> 
+  
+  * <a href="https://hycbook.gitee.io/bk_machineLearning" style="color:#9ACD32;font-size:25px;font-family:cursive"> &#x1F34F; 机器学习学习笔记gitee</a> 
+  
+    
+  
+* 英语学习笔记记录了英语的主要常用的语法点知识，包括各类从句和词性的解析理解
+
+  * <a href="https://hycbook.github.io/bk_english" style="color:#EE7AE9;font-size:25px;font-family:cursive"> &#x1F353; 英语学习笔记</a>
+
 
 
 

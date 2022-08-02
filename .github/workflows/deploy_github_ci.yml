@@ -33,31 +33,33 @@ jobs:
           git clone https://github.com/narutohyc/node_modules_mathjax.git
           cp -r ./node_modules_mathjax/node_modules .
           npm install -g gitbook-cli
+          # 手动安装lightbox
+          npm install  gitbook-plugin-lightbox 
           gitbook install
           # npm install -g gitbook-summary
 
-      - name: export pdf ebook
-        run: |
-          # 安装calibre，生成电子书
-          echo 安装calibre...
-          sudo mkdir /usr/share/desktop-directories/
-          npm install svgexport -g
-          sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
-          sudo ln -s /usr/bin/nodejs /usr/bin/node
-          echo 安装calibre完成
-          mkdir -p /usr/share/fonts/truetype
-          cp -r ./node_modules_mathjax/fonts/* /usr/share/fonts/truetype
+      # - name: export pdf ebook
+      #   run: |
+      #     # 安装calibre，生成电子书
+      #     echo 安装calibre...
+      #     sudo mkdir /usr/share/desktop-directories/
+      #     npm install svgexport -g
+      #     sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+      #     sudo ln -s /usr/bin/nodejs /usr/bin/node
+      #     echo 安装calibre完成
+      #     mkdir -p /usr/share/fonts/truetype
+      #     cp -r ./node_modules_mathjax/fonts/* /usr/share/fonts/truetype
 
       # generate _book folder
       - name: generate_book_folder
         run: |
           gitbook build
-          echo 开始生成epub电子书...
-          gitbook epub ./ bk_index.epub
-          echo 生成epub电子书完成
-          mkdir _ebook
-          cp bk_index.epub _ebook/
-          echo pdf电子书复制完成
+          # echo 开始生成epub电子书...
+          # gitbook epub ./ bk_index.epub
+          # echo 生成epub电子书完成
+          # mkdir _ebook
+          # cp bk_index.epub _ebook/
+          # echo pdf电子书复制完成
           cp ./node_modules_mathjax/py_scripts/gen_sup_idx.py .
           pip install BeautifulSoup4
           pip install lxml

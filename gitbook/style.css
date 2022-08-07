@@ -2157,3 +2157,15 @@ body {
     cursor: url(https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.1.6/images/mouse.cur),auto;
     background-color: @theme_background;
 }
+
+/*
+    修改引用的格式
+*/
+.markdown-section blockquote {
+ margin: 0;
+ margin-bottom: .85em;
+ padding: 0 15px;
+ color: #328e67;
+ border-left: 4px solid #cf0b86d1;
+ background-color: #5a910930
+}
